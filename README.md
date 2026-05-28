@@ -120,14 +120,15 @@ Góc phải dưới có `CV Preview` kèm landmark bàn tay và debug:
 Khuyến nghị dùng **Python 3.11**.
 
 ```powershell
-cd D:\Work\TuTien
+git clone https://github.com/Ngo-Miingg/GameTuTien.git
+cd GameTuTien
 pip install -r requirements.txt
 ```
 
 ## Chạy Game
 
 ```powershell
-cd D:\Work\TuTien
+cd GameTuTien
 .\run_2d.ps1
 ```
 
@@ -139,7 +140,7 @@ Khi vào game, chọn:
 ## Kiểm Thử
 
 ```powershell
-cd D:\Work\TuTien
+cd GameTuTien
 python -m py_compile .\*.py
 python .\qa_checks.py
 python .\preview_snapshots.py
@@ -154,14 +155,14 @@ Kết quả QA mong đợi:
 ## Đóng Gói EXE
 
 ```powershell
-cd D:\Work\TuTien
+cd GameTuTien
 .\build_2d.ps1
 ```
 
 File sau khi build:
 
 ```text
-D:\Work\TuTien\dist\TienLoDoKiep2D\TienLoDoKiep2D.exe
+GameTuTien\dist\TienLoDoKiep2D\TienLoDoKiep2D.exe
 ```
 
 Đây là build dạng `onedir`; khi gửi cho máy khác cần giữ nguyên cả thư mục:
